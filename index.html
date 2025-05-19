@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secret Link to CrazyGames</title>
+</head>
+<body>
+  <h3>Click the button to go to CrazyGames</h3>
+  <button onclick="goToCrazyGames()">Play CrazyGames</button>
+
+  <script>
+    function goToCrazyGames() {
+      // Base64 encoded URL for https://www.crazygames.com
+      const encodedUrl = "aHR0cHM6Ly93d3cuY3JhenlnYW1lcy5jb20=";
+      const decodedUrl = atob(encodedUrl);
+      window.location.href = decodedUrl;
+    }
+  </script>
+</body>
+</html>
